@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y
 
 # Supprimer les caches d'installation des packages
 
-RUN apt-get clear && rm -rf /var/lib/apt/lists/*
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Supprimer les fichiers temporaires
 
