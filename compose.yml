@@ -1,17 +1,13 @@
 version: "3.8"
-
 services:
-
-#STREMLIT
   data-streamlit:
     build:
-      context: 
+      context: ./app/data-streamlit
     volumes:
-      - ./data:/app/stremlit
+      -.data:/app/streamlit
     tty: true
-    ports: 
+    ports:
       # HTTP
-      - target: 8501
-      - published: 8501
-      - protocol: tcp
-    
+target: 8501
+published: 8501
+protocol: tcp
